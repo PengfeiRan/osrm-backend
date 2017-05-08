@@ -135,6 +135,8 @@ std::function<struct tm(const point_t &)> LoadLocalTimesRTree(const std::string 
         }
         return tm{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
     };
+#else
+    return [](const point_t &point) { return struct tm(); };
 #endif
 }
 
