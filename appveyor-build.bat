@@ -103,6 +103,7 @@ msbuild OSRM.sln ^
 /t:rebuild ^
 /p:BuildInParallel=true ^
 /m:%NUMBER_OF_PROCESSORS% ^
+/Z10 ^
 /toolsversion:14.0 ^
 /p:PlatformToolset=v140 ^
 /clp:Verbosity=normal ^
